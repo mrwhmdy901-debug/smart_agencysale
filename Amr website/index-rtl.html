@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سمارت إيجنسي — وكالة رقمية حديثة</title>
+
+  <!-- خطوط -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- أيقونات Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- مكتبة الحركات ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  <style>
+    body { font-family: 'Cairo', sans-serif; direction: rtl; text-align: right; }
+    .nav a { margin-right: 18px; margin-left: 0; }
+    .hero-inner { flex-direction: row-reverse; }
+    .hero-text, .hero-media { text-align: right; }
+  </style>
+</head>
+
+<body>
+  <!-- الهيدر -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">سمارت إيجنسي</a>
+      <nav class="nav">
+  <a href="#services">الخدمات</a>
+  <a href="#about">من نحن</a>
+  <a href="#pricing">الأسعار</a>
+  <a href="#contact" class="cta">تواصل معنا</a>
+  <a href="index.html" class="lang-btn">English</a>
+    </nav>
+    </div>
+  </header>
+
+  <!-- المقدمة -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>نصمم ونطوّر حلول رقمية حديثة</h1>
+        <p>سمارت إيجنسي تساعد الشركات الناشئة والمؤسسات في إطلاق مواقع وتطبيقات احترافية.</p>
+        <a href="#contact" class="btn primary">ابدأ الآن</a>
+        <a href="#services" class="btn ghost">خدماتنا</a>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=1600&q=80" alt="معاينة">
+      </div>
+    </div>
+  </section>
+
+  <!-- الخدمات -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2 class="section-title">خدماتنا</h2>
+      <p class="section-sub">تصميم • تطوير • تسويق</p>
+      <div class="grid">
+        <div class="card">
+          <i class="fa-solid fa-paintbrush"></i>
+          <h3>التصميم</h3>
+          <p>تصميم واجهات المستخدم والهوية البصرية لعلامتك التجارية.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-code"></i>
+          <h3>البرمجة</h3>
+          <p>تطوير مواقع متجاوبة وتطبيقات ويب احترافية.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-bullhorn"></i>
+          <h3>التسويق</h3>
+          <p>تحسين محركات البحث وإدارة الحملات التسويقية باحترافية.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- من نحن -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">من نحن</h2>
+      <p>نحن فريق من المصممين والمطورين المبدعين، شغوفون بصناعة حلول رقمية حديثة تساعد الشركات على النجاح والتميّز.</p>
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?fit=crop&w=1600&q=80" alt="فريق العمل" class="about-img">
+    </div>
+  </section>
+
+  <!-- الأسعار -->
+  <section id="pricing" class="section pricing">
+    <div class="container">
+      <h2 class="section-title">خطط الأسعار</h2>
+      <div class="grid">
+        <div class="pricing-card">
+          <h3>الأساسية</h3>
+          <p class="price">99$</p>
+          <ul>
+            <li>صفحة هبوط</li>
+            <li>تصميم متجاوب</li>
+            <li>دعم لمدة أسبوع</li>
+          </ul>
+        </div>
+        <div class="pricing-card featured">
+          <h3>الاحترافية</h3>
+          <p class="price">199$</p>
+          <ul>
+            <li>موقع كامل</li>
+            <li>تصميم مخصص</li>
+            <li>دعم لمدة شهر</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <h3>المؤسسات</h3>
+          <p class="price">مخصص</p>
+          <ul>
+            <li>مشروعات كبيرة</li>
+            <li>فريق مخصص</li>
+            <li>دعم أولوية</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- التواصل -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">تواصل معنا</h2>
+      <p>أرسل لنا رسالة وسنقوم بالرد عليك خلال 24 ساعة.</p>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="الاسم" required>
+        <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+        <textarea id="message" placeholder="رسالتك" required></textarea>
+        <button type="submit" class="btn primary">إرسال</button>
+        <p id="successMessage" class="success"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Amr Hamdi — جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
